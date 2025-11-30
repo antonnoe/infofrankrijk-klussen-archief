@@ -6,83 +6,167 @@
     <title>Infofrankrijk klus- en forumarchief</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
-                        infofrankrijk: '#800000', // Jouw huisstijl kleur
-                        infohover: '#600000',     // Een tikkeltje donkerder voor de hover
+                        infofrankrijk: '#800000', // Jouw huisstijl rood
+                        infohover: '#600000',     // Donkerder voor hover
+                        infobg: '#fff5f5',        // Heel zacht rood tintje voor achtergrond
+                    },
+                    boxShadow: {
+                        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+                        'wow': '0 20px 40px -5px rgba(128, 0, 0, 0.15), 0 10px 20px -5px rgba(0, 0, 0, 0.1)', // De zweef-schaduw
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-infofrankrijk selection:text-white">
 
-    <header class="bg-white border-b border-slate-200 shadow-sm">
-        <div class="max-w-4xl mx-auto px-6 py-12 md:py-20 text-center">
-            <h1 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-                Infofrankrijk klus- en forumarchief
+    <script>
+        const mediaLijst = [
+            {
+                type: 'video',
+                youtubeId: '75v3SPOZL5A',
+                titel: 'Klussen in Frankrijk: De Essentiële Gids',
+                tekst: "De 5 grootste valkuilen bij renovatie. Van fundering tot de gevaren van 'pose en rénovation'.",
+                label: 'Basis'
+            },
+            {
+                type: 'video',
+                youtubeId: 'Ucw3R1UNk-0',
+                titel: 'Murs en Pierre: De ziel van een Frans Huis',
+                tekst: "Waarom cement 'blasfemie' is op oude muren. Alles over ademende kalkmortel en respect voor de historie.",
+                label: 'Restauratie'
+            },
+            {
+                type: 'video',
+                youtubeId: '77WcNA3WLD0',
+                titel: 'Elektra in Frankrijk: C\'est different!',
+                tekst: "Vergeet de Nederlandse regels. Alles over de NF C 15-100 norm, de Consuel keuring en waarom je nooit mag 'aftappen'.",
+                label: 'Techniek'
+            },
+            {
+                type: 'video',
+                youtubeId: '07enFXhADXo',
+                titel: 'De Fosse Septique: We duiken erin!',
+                tekst: "Jouw eigen waterzuivering. Waarom chloor je vijand is, wat de SPANC controleert en hoe je hoge kosten voorkomt.",
+                label: 'Sanitair'
+            }
+        ];
+        
+        const notebookLink = "https://notebooklm.google.com/notebook/0a7c98ac-3b67-4fb9-be7f-154ba26269ec";
+    </script>
+    <header class="relative bg-white border-b border-slate-100 overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-red-50 rounded-full blur-3xl opacity-60 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 bg-slate-50 rounded-full blur-3xl opacity-60 pointer-events-none"></div>
+        
+        <div class="relative max-w-5xl mx-auto px-6 py-16 md:py-24 text-center">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-red-50 text-infofrankrijk text-xs font-bold tracking-widest uppercase mb-6 border border-red-100 shadow-sm">
+                Het Officiële Archief
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-8 tracking-tight leading-tight">
+                Infofrankrijk <span class="text-infofrankrijk">Klus- en Forumarchief</span>
             </h1>
             
-            <div class="bg-slate-100 p-6 rounded-xl border border-slate-200 mb-8 text-left md:text-center shadow-inner">
-                <p class="text-lg text-slate-700 leading-relaxed whitespace-pre-line font-medium">
-Beste Infofrankrijk-bezoeker,
-
-Hier vind je 12 jaar aan diepgravende forumdiscussies en expertise, veiliggesteld voor de toekomst. Deze Notebook bevat bronnen van binnenuit: de onmisbare en inhoudelijke draadjes en artikelen van experts als Wim Bavelaar, Rob van de Meulen, Christian von Klösterlein, Bram van Zanten en vele anderen.
-
-De bronnen zijn Nederlandstalig (tenzij linkjes van de auteurs). Vraag en ontdek!
-
-Doe er je voordeel mee!
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl border border-slate-100 shadow-xl shadow-slate-200/50 mb-10 text-left md:text-center relative z-10">
+                <i class="fa-solid fa-quote-left text-4xl text-red-50 absolute -top-4 -left-4"></i>
+                <p class="text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
+                    Hier vind je 12 jaar aan diepgravende forumdiscussies en expertise, veiliggesteld voor de toekomst. Een monument voor de kennis van experts als <span class="text-infofrankrijk font-bold">Wim Bavelaar</span>, <span class="text-infofrankrijk font-bold">Rob van de Meulen</span>, <span class="text-infofrankrijk font-bold">Christian von Klösterlein</span> en vele anderen.
                 </p>
             </div>
 
-            <a href="https://notebooklm.google.com/notebook/0a7c98ac-3b67-4fb9-be7f-154ba26269ec" 
-               target="_blank"
-               class="inline-flex items-center gap-3 bg-infofrankrijk hover:bg-infohover text-white text-lg font-bold px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                Open het Interactieve Archief
+            <a id="notebookBtn" target="_blank" class="group cursor-pointer inline-flex items-center gap-4 bg-infofrankrijk text-white text-lg font-bold px-10 py-5 rounded-full transition-all duration-300 shadow-lg hover:shadow-wow hover:-translate-y-1 hover:bg-infohover ring-4 ring-red-50">
+                <span class="bg-white/20 w-10 h-10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <span>Open het Interactieve Archief</span>
+                <i class="fa-solid fa-arrow-right opacity-50 group-hover:translate-x-1 transition-transform"></i>
             </a>
-            <p class="mt-3 text-sm text-slate-400">
-                *Google account vereist voor toegang
+            <p class="mt-4 text-sm text-slate-400 font-medium">
+                <i class="fa-brands fa-google mr-1"></i> Google account vereist voor toegang
             </p>
         </div>
     </header>
 
-    <section class="max-w-4xl mx-auto px-6 py-16">
-        <h2 class="text-2xl font-bold mb-8 text-slate-800 border-l-4 border-infofrankrijk pl-4">
-            Uitgelichte Bron
-        </h2>
+    <section class="max-w-7xl mx-auto px-6 py-20 bg-slate-50">
+        <div class="flex flex-col md:flex-row items-center justify-between mb-12">
+            <h2 class="text-3xl font-bold text-slate-900 flex items-center gap-3 mb-4 md:mb-0">
+                <span class="w-2 h-8 bg-infofrankrijk rounded-full"></span>
+                Videotheek
+            </h2>
+            <div class="flex items-center gap-2 text-sm font-bold text-slate-400 uppercase tracking-wider">
+                <i class="fa-solid fa-film"></i>
+                <span>Exclusief Materiaal</span>
+            </div>
+        </div>
         
-        <article class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
-            <div class="bg-black aspect-video relative">
-                <iframe 
-                    class="w-full h-full" 
-                    src="https://www.youtube.com/embed/75v3SPOZL5A" 
-                    title="Klussen in Frankrijk" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
+        <div id="mediaContainer" class="grid md:grid-cols-2 gap-8 lg:gap-10">
             </div>
-            <div class="p-6">
-                <span class="bg-red-50 text-infofrankrijk text-xs font-bold px-2 py-1 rounded-full uppercase mb-2 inline-block border border-red-100">
-                    <i class="fa-solid fa-play mr-1"></i> Video
-                </span>
-                <h3 class="font-bold text-xl mb-2">Klussen in Frankrijk: De Essentiële Gids</h3>
-                <p class="text-slate-600 text-base leading-relaxed">
-                    Een visuele samenvatting van de 5 grootste valkuilen bij renovatie in Frankrijk. Van fundering tot elektra (NF C 15-100) en de 'Fosse'.
-                </p>
-            </div>
-        </article>
-
     </section>
 
-    <footer class="bg-slate-900 text-slate-400 py-12 text-center text-sm mt-12">
-        <p>Gemaakt ter ere van de community van Infofrankrijk.com</p>
+    <footer class="bg-slate-900 text-slate-400 py-16 text-center border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i class="fa-solid fa-house-chimney text-3xl text-slate-600"></i>
+            </div>
+            <p class="text-slate-300 font-medium text-lg mb-2">Gemaakt ter ere van de community van Infofrankrijk.com</p>
+            <p class="text-sm text-slate-600">© 2025 Digitaal Erfgoed Infofrankrijk</p>
+        </div>
     </footer>
 
+    <script>
+        document.getElementById('notebookBtn').href = notebookLink;
+        const container = document.getElementById('mediaContainer');
+        
+        mediaLijst.forEach((item, index) => {
+            const isVideo = item.type === 'video';
+            const icon = isVideo ? 'fa-play' : 'fa-headphones';
+            
+            const html = `
+            <article class="group bg-white rounded-3xl shadow-card border border-slate-100 overflow-hidden hover:shadow-wow hover:-translate-y-2 transition-all duration-300 flex flex-col h-full transform translate-z-0">
+                <div class="bg-black aspect-video relative overflow-hidden">
+                    <div class="absolute inset-0 bg-infofrankrijk/10 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
+                    <iframe 
+                        class="w-full h-full transform group-hover:scale-105 transition-transform duration-700" 
+                        src="https://www.youtube.com/embed/${item.youtubeId}" 
+                        title="${item.titel}" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="p-8 flex flex-col flex-grow relative">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-red-50 rounded-bl-full opacity-50 pointer-events-none transition-opacity group-hover:opacity-100"></div>
+                    
+                    <div class="flex items-center justify-between mb-4 relative z-10">
+                        <span class="bg-red-50 text-infofrankrijk text-xs font-extrabold px-3 py-1.5 rounded-lg uppercase tracking-wider border border-red-100">
+                            ${item.label || item.type}
+                        </span>
+                    </div>
+                    
+                    <h3 class="font-bold text-2xl mb-3 text-slate-900 group-hover:text-infofrankrijk transition-colors leading-tight relative z-10">
+                        ${item.titel}
+                    </h3>
+                    
+                    <p class="text-slate-600 text-base leading-relaxed mb-6 flex-grow relative z-10">
+                        ${item.tekst}
+                    </p>
+                    
+                    <div class="pt-6 border-t border-slate-100 flex items-center text-sm font-bold text-infofrankrijk relative z-10">
+                        <span>Bekijk video</span>
+                        <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+            </article>`;
+            container.innerHTML += html;
+        });
+    </script>
 </body>
 </html>
