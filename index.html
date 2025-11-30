@@ -63,11 +63,11 @@
         
         const notebookLink = "https://notebooklm.google.com/notebook/0a7c98ac-3b67-4fb9-be7f-154ba26269ec";
     </script>
-    <header class="relative bg-white border-b border-slate-100 overflow-hidden">
+<header class="relative bg-white border-b border-slate-100 overflow-hidden">
         <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-red-50 rounded-full blur-3xl opacity-60 pointer-events-none"></div>
         <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 bg-slate-50 rounded-full blur-3xl opacity-60 pointer-events-none"></div>
         
-        <div class="relative max-w-5xl mx-auto px-6 py-16 md:py-24 text-center">
+        <div class="relative max-w-4xl mx-auto px-6 py-16 md:py-20 text-center">
             <span class="inline-block py-1.5 px-4 rounded-full bg-red-50 text-infofrankrijk text-xs font-bold tracking-widest uppercase mb-6 border border-red-100 shadow-sm">
                 Het Officiële Archief
             </span>
@@ -75,23 +75,28 @@
                 Infofrankrijk <span class="text-infofrankrijk">Klus- en Forumarchief</span>
             </h1>
             
-            <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl border border-slate-100 shadow-xl shadow-slate-200/50 mb-10 text-left md:text-center relative z-10">
-                <i class="fa-solid fa-quote-left text-4xl text-red-50 absolute -top-4 -left-4"></i>
-                <p class="text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
-                    Hier vind je 12 jaar aan diepgravende forumdiscussies en expertise, veiliggesteld voor de toekomst. Een monument voor de kennis van experts als <span class="text-infofrankrijk font-bold">Wim Bavelaar</span>, <span class="text-infofrankrijk font-bold">Rob van de Meulen</span>, <span class="text-infofrankrijk font-bold">Christian von Klösterlein</span> en vele anderen.
+            <p class="text-lg md:text-xl text-slate-600 leading-relaxed font-medium mb-10 max-w-2xl mx-auto">
+                12 jaar aan forumdiscussies, veiliggesteld en doorzoekbaar. Stel je vraag aan de experts:
+            </p>
+
+            <div class="max-w-3xl mx-auto relative group cursor-pointer">
+                <a href="https://notebooklm.google.com/notebook/0a7c98ac-3b67-4fb9-be7f-154ba26269ec" target="_blank" class="block relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-red-100 to-slate-200 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                    
+                    <div class="relative rounded-2xl overflow-hidden border-2 border-slate-100 shadow-xl ring-1 ring-slate-900/5 transform transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-2xl">
+                        <img src="search-preview.png" alt="Voorbeeld vraag aan het archief" class="w-full h-auto object-cover">
+                        
+                        <div class="absolute inset-0 bg-infofrankrijk/5 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-[1px]">
+                            <span class="bg-infofrankrijk text-white text-lg font-bold px-8 py-3 rounded-full shadow-lg transform scale-90 group-hover:scale-100 transition-transform">
+                                <i class="fa-solid fa-comments mr-2"></i> Start de Chat
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <p class="mt-4 text-sm text-slate-400 font-medium">
+                    <i class="fa-brands fa-google mr-1"></i> Inloggen met Google vereist
                 </p>
             </div>
-
-            <a id="notebookBtn" target="_blank" class="group cursor-pointer inline-flex items-center gap-4 bg-infofrankrijk text-white text-lg font-bold px-10 py-5 rounded-full transition-all duration-300 shadow-lg hover:shadow-wow hover:-translate-y-1 hover:bg-infohover ring-4 ring-red-50">
-                <span class="bg-white/20 w-10 h-10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </span>
-                <span>Open het Interactieve Archief</span>
-                <i class="fa-solid fa-arrow-right opacity-50 group-hover:translate-x-1 transition-transform"></i>
-            </a>
-            <p class="mt-4 text-sm text-slate-400 font-medium">
-                <i class="fa-brands fa-google mr-1"></i> Google account vereist voor toegang
-            </p>
         </div>
     </header>
 
