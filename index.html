@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoFrankrijk Klussen Archief</title>
+    <title>Infofrankrijk klus- en forumarchief</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        infofrankrijk: '#800000', // Jouw huisstijl kleur
+                        infohover: '#600000',     // Een tikkeltje donkerder voor de hover
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans">
 
     <header class="bg-white border-b border-slate-200 shadow-sm">
         <div class="max-w-4xl mx-auto px-6 py-12 md:py-20 text-center">
             <h1 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-                Het InfoFrankrijk Praktijkarchief
+                Infofrankrijk klus- en forumarchief
             </h1>
             
-            <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-8 text-left md:text-center shadow-inner">
+            <div class="bg-slate-100 p-6 rounded-xl border border-slate-200 mb-8 text-left md:text-center shadow-inner">
                 <p class="text-lg text-slate-700 leading-relaxed whitespace-pre-line font-medium">
 Beste Infofrankrijk-bezoeker,
 
@@ -29,7 +41,7 @@ Doe er je voordeel mee!
 
             <a href="https://notebooklm.google.com/notebook/0a7c98ac-3b67-4fb9-be7f-154ba26269ec" 
                target="_blank"
-               class="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+               class="inline-flex items-center gap-3 bg-infofrankrijk hover:bg-infohover text-white text-lg font-bold px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 Open het Interactieve Archief
             </a>
@@ -40,7 +52,7 @@ Doe er je voordeel mee!
     </header>
 
     <section class="max-w-4xl mx-auto px-6 py-16">
-        <h2 class="text-2xl font-bold mb-8 text-slate-800 border-l-4 border-blue-500 pl-4">
+        <h2 class="text-2xl font-bold mb-8 text-slate-800 border-l-4 border-infofrankrijk pl-4">
             Uitgelichte Bron
         </h2>
         
@@ -56,7 +68,7 @@ Doe er je voordeel mee!
                 </iframe>
             </div>
             <div class="p-6">
-                <span class="bg-red-100 text-red-700 text-xs font-bold px-2 py-1 rounded-full uppercase mb-2 inline-block">
+                <span class="bg-red-50 text-infofrankrijk text-xs font-bold px-2 py-1 rounded-full uppercase mb-2 inline-block border border-red-100">
                     <i class="fa-solid fa-play mr-1"></i> Video
                 </span>
                 <h3 class="font-bold text-xl mb-2">Klussen in Frankrijk: De Essentiële Gids</h3>
@@ -69,7 +81,7 @@ Doe er je voordeel mee!
     </section>
 
     <footer class="bg-slate-900 text-slate-400 py-12 text-center text-sm mt-12">
-        <p>Gemaakt voor (en door) de voormalige leden van het forum van Infofrankrijk.com</p>
+        <p>Gemaakt ter ere van de community van Infofrankrijk.com</p>
     </footer>
 
 </body>
